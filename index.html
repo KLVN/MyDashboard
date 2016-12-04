@@ -13,12 +13,18 @@
 <body>
     <nav id="navbar" class="navbar navbar-fixed-top">
       <a class="navbar-brand" href="#">MyDashboard</a>
-      <ul class="nav navbar-nav"><span class="navbar-text float-xs-right text-muted">KW: {{week}}</span></ul>
+      <ul class="nav navbar-nav">
+        <span class="navbar-text float-xs-right text-muted">KW: {{week}}</span>
+      </ul>
     </nav>
 
     <div class="container">
       <div class="row">
         <div class="col-md-12">
+          
+          <div class="alert alert-danger" role="alert">
+            <strong>Anmeldezeitraum!</strong> Vom 5. bis 18.12 sind die Prüfungsanmeldungen im <a href="https://www.service.tuhh.de/sos/" class="alert-link" target="_blank">SOS</a> möglich.
+          </div>
           
           <div class="card card-block">
             <h4 class="card-title">Links</h4>
@@ -43,7 +49,6 @@
         <div class="card card-block">
           <h4 class="card-title">TUHH.de Suche</h4>
             <div class="card-text">
-              
               <form class="form-inline" action="https://google.de/search" method="get" target="_blank">
                 <div class="form-group-lg">
                     <input type="hidden" name="sitesearch" value="https://www.tuhh.de" />
@@ -51,15 +56,14 @@
                     <button type="submit" class="btn btn-primary">Suchen</button>
                 </div>
               </form>
-              
             </div>
           </div>
         
         </div>
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/locale/de.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/locale/de.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
