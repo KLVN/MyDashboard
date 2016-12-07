@@ -6,6 +6,8 @@ Personal university dashboard with everything that could be important.
 - TUHH website search
 - ... more to come
 
+### Live demo
+[Demo]
 
 ### Tech
 * [Twitter Bootstrap 4] - wanted to try out Bootstrap 4 ...
@@ -37,6 +39,7 @@ MIT
 
 
 [//]: # 
+   [Demo]: <https://www.tuhh.de/~cha0000/>
    [vue.js]: <https://vuejs.org/>
    [Twitter Bootstrap 4]: <https://v4-alpha.getbootstrap.com/>
    [Google Charts]: <https://developers.google.com/chart/>
