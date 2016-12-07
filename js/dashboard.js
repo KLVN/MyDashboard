@@ -1,8 +1,21 @@
+////////// Moment.js //////////
+moment.locale("de");
+var currentweek = moment().isoWeek();
+
+function formatDate(unformatted) {
+  return new Date(moment(unformatted, "DD.MM.YYYY").format("M/DD/YYYY"));
+}
+
+function truncateDate(unformatted) {
+  return moment(unformatted, "DD.MM.YYYY").format("D.M");
+}
+
+
 ////////// Data //////////
 var DashboardData = {
   links: [
     {name: "Stud.IP", url: "https://e-learning.tu-harburg.de/studip/index.php?again=yes"},
-    {name: "Mensa", url: "http://speiseplan.studierendenwerk-hamburg.de/de/570/2016/48/"},
+    {name: "Mensa", url: "http://speiseplan.studierendenwerk-hamburg.de/de/570/2016/"+ currentweek + "/"},
     {name: "Mail", url: "https://webmail.tu-harburg.de/horde/imp/dynamic.php?page=mailbox#mbox:SU5CT1g"},
     {name: "SOS", url: "https://www.service.tuhh.de/sos/"},
     {name: "Prüfungstermine", url: "https://intranet.tuhh.de/stud/pruefung/index.php3"},
@@ -22,22 +35,12 @@ var DashboardData = {
     {semester: 3, name: "IS", date: "10.03.2017", duration: 10},
     {semester: 1, name: "PP", date: "14.03.2017", duration: 7},
     {semester: 3, name: "CN", date: "23.03.2017", duration: 12},
-    {semester: 2, name: "MA", date: "31.03.2017", duration: 14}
+    {semester: 2, name: "MA", date: "31.03.2017", duration: 14},
+    {semester: 4, name: "S4", date: "03.04.2017", duration: 3}
   ]
 }
 
 
-////////// Moment.js //////////
-moment.locale("de");
-var currentweek = moment().isoWeek();
-
-function formatDate(unformatted) {
-  return new Date(moment(unformatted, "DD.MM.YYYY").format("M/DD/YYYY"));
-}
-
-function truncateDate(unformatted) {
-  return moment(unformatted, "DD.MM.YYYY").format("D.M");
-}
 
 ////////// Vue //////////
 // KW
