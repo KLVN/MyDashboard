@@ -26,19 +26,29 @@ var DashboardData = {
     {name: "Lageplan", url: "https://www.tuhh.de/tuhh/uni/lageplan/campusplan.html"}
   ],
   lectures: [
-    {semester: 2, name: "OOP", date: "09.02.2017", duration: 10},
-    {semester: 3, name: "TI", date: "14.02.2017", duration: 10},
-    {semester: 2, name: "Logik", date: "17.02.2017", duration: 7},
-    {semester: 3, name: "Mathe 3", date: "23.02.2017", duration: 14},
-    {semester: 1, name: "LA", date: "24.02.2017", duration: 10},
-    {semester: 1, name: "FP", date: "01.03.2017", duration: 7},
-    {semester: 2, name: "SE", date: "07.03.2017", duration: 7},
-    {semester: 3, name: "IS", date: "10.03.2017", duration: 10},
-    {semester: 1, name: "PP", date: "14.03.2017", duration: 7},
-    {semester: 3, name: "CN", date: "23.03.2017", duration: 12},
-    {semester: 2, name: "MA", date: "31.03.2017", duration: 14},
-    {semester: 4, name: "S4", date: "03.04.2017", duration: 3}
+    {semester: 4, name: "GT", date: "21.07.2017", duration: 12},
+    {semester: 2, name: "OOP", date: "04.08.2017", duration: 12},
+    {semester: 4, name: "SigSys", date: "23.08.2017", duration: 14},
+    {semester: 2, name: "MA", date: "04.09.2017", duration: 14},
+    {semester: 4, name: "Stoch", date: "04.09.2017", duration: 14},
+    {semester: 4, name: "BS", date: "11.09.2017", duration: 12},
+    {semester: 4, name: "BuK", date: "21.09.2017", duration: 12},
+    {semester: 5, name: "S5", date: "16.10.2017", duration: 3}
   ]
+  // lectures: [
+  //   {semester: 2, name: "OOP", date: "09.02.2017", duration: 10},
+  //   {semester: 3, name: "TI", date: "14.02.2017", duration: 10},
+  //   {semester: 2, name: "Logik", date: "17.02.2017", duration: 7},
+  //   {semester: 3, name: "Mathe 3", date: "23.02.2017", duration: 14},
+  //   {semester: 1, name: "LA", date: "24.02.2017", duration: 10},
+  //   {semester: 1, name: "FP", date: "01.03.2017", duration: 7},
+  //   {semester: 2, name: "SE", date: "07.03.2017", duration: 7},
+  //   {semester: 3, name: "IS", date: "10.03.2017", duration: 10},
+  //   {semester: 1, name: "PP", date: "14.03.2017", duration: 7},
+  //   {semester: 3, name: "CN", date: "23.03.2017", duration: 12},
+  //   {semester: 2, name: "MA", date: "31.03.2017", duration: 14},
+  //   {semester: 4, name: "S4", date: "03.04.2017", duration: 3}
+  // ]
 }
 
 
@@ -78,10 +88,10 @@ function drawChart() {
   dataTable.addColumn({ type: 'date', id: 'End' });
   dataTable.addRows([
     ['', 'Heute', new Date(), new Date()],
-    ['', 'Anmeldezeitraum', formatDate("05.12.2016"), formatDate("18.12.2016")],
-    ['', 'Ferien', formatDate("24.12.2016"), formatDate("8.01.2017")]
+    //['', 'Anmeldezeitraum', formatDate("05.12.2016"), formatDate("18.12.2016")],
+    //['', 'Ferien', formatDate("24.12.2016"), formatDate("8.01.2017")]
   ]);
-  
+
   // so proud of dis ( ͡° ͜ʖ ͡°)
   for(i in DashboardData.lectures) {
     dataTable.addRows([['S' + DashboardData["lectures"][i]["semester"],
@@ -89,7 +99,7 @@ function drawChart() {
       formatDate(moment(formatDate(DashboardData["lectures"][i]["date"])).subtract(DashboardData["lectures"][i]["duration"], 'days')),
       formatDate(DashboardData["lectures"][i]["date"])]]);
   };
-  
+
   var numRows2 = dataTable.getNumberOfRows();
   var chartHeight = numRows2 * 41 + 50;
 
