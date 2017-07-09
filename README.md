@@ -6,32 +6,32 @@ Personal university dashboard with everything that could be important.
 - TUHH website search
 - ... more to come
 
-### Live demo
+## Live demo
 [Demo]
 
-### Tech
+## Tech
 * [Twitter Bootstrap 4] - wanted to try out Bootstrap 4 ...
-* [vue.js] - .. and also this
+* [vue.js] - ... and also this
 * [Google Charts] - used for the timeline (exam schedule)
 * [jQuery] - duh 
 
 
-### "Installation"
+## "Installation"
 Just upload it to your webserver.
 
 @TUHH students: Ihr könnt euch [hier] ein eigenes WWW-Verzeichnis auf den Servern der Uni anlegen lassen. \o/
 
 
-### Development
+## Development
 Want to contribute? Great! Fork it, swing your wand, do your magic and make pull requests.
 
 
-### Todos
+## Todos
 
- - optimize for mobile devices
- - bus & train departure monitor (HVV)
- - canteen menu
- - *surprise me* ( ͡° ͜ʖ ͡°)
+ - [] optimize for mobile devices
+ - [] bus & train departure monitor (HVV)
+ - [] canteen menu
+ - [] *surprise me* ( ͡° ͜ʖ ͡°)
 
 License
 ----
