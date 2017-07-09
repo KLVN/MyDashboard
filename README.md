@@ -28,10 +28,10 @@ Want to contribute? Great! Fork it, swing your wand, do your magic and make pull
 
 ## Todos
 
- - [] optimize for mobile devices
- - [] bus & train departure monitor (HVV)
- - [] canteen menu
- - [] *surprise me* ( ͡° ͜ʖ ͡°)
+ - [ ] optimize for mobile devices
+ - [ ] bus & train departure monitor (HVV)
+ - [ ] canteen menu
+ - [ ] *surprise me* ( ͡° ͜ʖ ͡°)
 
 License
 ----
