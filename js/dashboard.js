@@ -1,6 +1,7 @@
 ////////// Moment.js //////////
 moment.locale("de");
-var currentweek = moment().isoWeek();
+var currentWeek = moment().isoWeek();
+var currentYear = moment().format('YYYY');
 
 function formatDate(unformatted) {
   return new Date(moment(unformatted, "DD.MM.YYYY").format("M/DD/YYYY"));
@@ -15,7 +16,7 @@ function truncateDate(unformatted) {
 var DashboardData = {
   links: [
     {name: "Stud.IP", url: "https://e-learning.tu-harburg.de/studip/index.php?again=yes"},
-    {name: "Mensa", url: "http://speiseplan.studierendenwerk-hamburg.de/de/570/2016/"+ currentweek + "/"},
+    {name: "Mensa", url: "http://speiseplan.studierendenwerk-hamburg.de/de/570/" + currentYear + "/" + currentWeek + "/"},
     {name: "Mail", url: "https://webmail.tu-harburg.de/horde/imp/dynamic.php?page=mailbox#mbox:SU5CT1g"},
     {name: "SOS", url: "https://www.service.tuhh.de/sos/"},
     {name: "Prüfungstermine", url: "https://intranet.tuhh.de/stud/pruefung/index.php3"},
@@ -47,7 +48,7 @@ var DashboardData = {
 var vueNavbar = new Vue({
   el: '#navbar',
   data: {
-    week: currentweek
+    week: currentWeek
   }
 });
 
