@@ -44,4 +44,4 @@ MIT
    [Twitter Bootstrap 4]: <https://v4-alpha.getbootstrap.com/>
    [Google Charts]: <https://developers.google.com/chart/>
    [jQuery]: <http://jquery.com>
-   [hier]: <https://www.tuhh.de/rzt/net/public/dienste/wwwserver/homepages.html>
+   [hier]: <https://www.tuhh.de/rzt/services/webserver/wwwtuhhde/homepages.html>
