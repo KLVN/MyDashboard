@@ -12,7 +12,8 @@ a[target="_blank"]:after {
   background-size: 8px 11px;
   display: inline-block;
   width: 8px; 
-  height: 11px;
-  margin-left: 4px;
+  height: 14px;
+  margin-left: 2px;
+  background-repeat: no-repeat;
   content: "";
 }
