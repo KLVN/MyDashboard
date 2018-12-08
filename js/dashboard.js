@@ -52,7 +52,6 @@ var DashboardData = {
 }
 
 
-
 ////////// Vue //////////
 // KW
 var vueNavbar = new Vue({
@@ -91,7 +90,7 @@ function drawChart() {
     //['', 'Anmeldezeitraum', formatDate("05.12.2016"), formatDate("18.12.2016")],
     //['', 'Ferien', formatDate("24.12.2016"), formatDate("8.01.2017")]
   ]);
-
+  
   // so proud of dis ( ͡° ͜ʖ ͡°)
   for(i in DashboardData.lectures) {
     dataTable.addRows([['S' + DashboardData["lectures"][i]["semester"],
@@ -99,7 +98,7 @@ function drawChart() {
       formatDate(moment(formatDate(DashboardData["lectures"][i]["date"])).subtract(DashboardData["lectures"][i]["duration"], 'days')),
       formatDate(DashboardData["lectures"][i]["date"])]]);
   };
-
+  
   var numRows2 = dataTable.getNumberOfRows();
   var chartHeight = numRows2 * 41 + 50;
 
@@ -111,8 +110,7 @@ function drawChart() {
       colorByRowLabel: true
     },
     hAxis: {
-      minValue: moment().subtract(5, 'day'),
-      maxValue: formatDate("07.04.2017")
+      minValue: moment().subtract(5, 'day')
     }
   };
 
