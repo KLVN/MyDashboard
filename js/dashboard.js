@@ -26,29 +26,23 @@ var DashboardData = {
     {name: "Lageplan", url: "https://www.tuhh.de/tuhh/uni/lageplan/campusplan.html"}
   ],
   lectures: [
-    {semester: 4, name: "GT", date: "21.07.2017", duration: 12},
-    {semester: 2, name: "OOP", date: "04.08.2017", duration: 12},
-    {semester: 4, name: "SigSys", date: "23.08.2017", duration: 14},
-    {semester: 2, name: "MA", date: "04.09.2017", duration: 14},
-    {semester: 4, name: "Stoch", date: "04.09.2017", duration: 14},
-    {semester: 4, name: "BS", date: "11.09.2017", duration: 12},
-    {semester: 4, name: "BuK", date: "21.09.2017", duration: 12},
-    {semester: 5, name: "S5", date: "16.10.2017", duration: 3}
+    {semester: 2, name: "OOP", date: "05.02.2019", duration: 10},
+    {semester: 5, name: "Nachrichtentechnik", date: "07.02.2019", duration: 12},
+    {semester: 5, name: "RA", date: "13.02.2019", duration: 7},
+    {semester: 3, name: "CN", date: "22.02.2019", duration: 10},
+    {semester: 4, name: "Graphentheorie", date: "28.02.2019", duration: 10},
+    {semester: 3, name: "Mathe 3", date: "05.03.2019", duration: 14},
+    {semester: 5, name: "VS", date: "11.03.2019", duration: 10},
+    {semester: 5, name: "ES", date: "12.03.2019", duration: 7},
+    {semester: 5, name: "AppSec", date: "13.03.2019", duration: 7},
+    {semester: 4, name: "SigSys", date: "18.03.2019", duration: 14},
+    {semester: 4, name: "Stochastik", date: "22.03.2019", duration: 14},
+    {semester: 3, name: "IntroSec", date: "25.03.2019", duration: 7},
+    {semester: 4, name: "BS", date: "26.03.2019", duration: 10},
+    {semester: 2, name: "Analysis", date: "27.03.2019", duration: 14},
+    
+    {semester: 1, name: "SS19", date: "01.04.2019", duration: 1}
   ]
-  // lectures: [
-  //   {semester: 2, name: "OOP", date: "09.02.2017", duration: 10},
-  //   {semester: 3, name: "TI", date: "14.02.2017", duration: 10},
-  //   {semester: 2, name: "Logik", date: "17.02.2017", duration: 7},
-  //   {semester: 3, name: "Mathe 3", date: "23.02.2017", duration: 14},
-  //   {semester: 1, name: "LA", date: "24.02.2017", duration: 10},
-  //   {semester: 1, name: "FP", date: "01.03.2017", duration: 7},
-  //   {semester: 2, name: "SE", date: "07.03.2017", duration: 7},
-  //   {semester: 3, name: "IS", date: "10.03.2017", duration: 10},
-  //   {semester: 1, name: "PP", date: "14.03.2017", duration: 7},
-  //   {semester: 3, name: "CN", date: "23.03.2017", duration: 12},
-  //   {semester: 2, name: "MA", date: "31.03.2017", duration: 14},
-  //   {semester: 4, name: "S4", date: "03.04.2017", duration: 3}
-  // ]
 }
 
 
