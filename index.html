@@ -1,72 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>MyDashboard</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/dashboard.css">
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  </head>
+
+<head>
+  <title>MyDashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
 <body>
-    <nav id="navbar" class="navbar navbar-fixed-top">
-      <a class="navbar-brand" href="#">MyDashboard</a>
-      <ul class="nav navbar-nav">
-        <span class="navbar-text float-xs-right text-muted">KW: {{week}}</span>
-      </ul>
-    </nav>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-
-          <!--<div class="alert alert-danger" role="alert">
+  <nav id="navbar" class="navbar navbar-fixed-top"> <a class="navbar-brand" href="#">MyDashboard</a>
+    <ul class="nav navbar-nav"> <span class="navbar-text float-xs-right text-muted">KW: {{week}}</span> </ul>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!--<div class="alert alert-danger" role="alert">
             <strong>Anmeldezeitraum!</strong> Vom 5. bis 18.12 sind die Prüfungsanmeldungen im <a href="https://www.service.tuhh.de/sos/" class="alert-link" target="_blank">SOS</a> möglich.
           </div>-->
-
-          <div class="card card-block">
-            <h4 class="card-title">Links</h4>
-            <p class="card-text">
-              <nav id="links" class="nav nav-inline">
-                <template v-for="link in links">
-                  <a class="nav-link" v-bind:href="link.url" target="_blank">{{link.name}}</a>
-                </template>
-              </nav>
-            </p>
-          </div>
-
-          <div class="card card-block">
-            <h4 class="card-title">Prüfungen (CS)</h4>
-            <div class="card-text">
-              <div id="chart_div"></div>
-            </div>
-            <a href="https://intranet.tuhh.de/stud/pruefung/index.php3" class="card-link" target="_blank">Alle Prüfungstermine</a>
-            <div class="float-xs-right text-muted">Angaben ohne Gewähr</div>
-          </div>
-
+        <div class="card card-block">
+          <h4 class="card-title">Links</h4>
+          <p class="card-text">
+            <nav id="links" class="nav nav-inline">
+              <template v-for="link in links"> <a class="nav-link" v-bind:href="link.url" target="_blank">{{link.name}}</a> </template>
+            </nav>
+          </p>
+        </div>
+        <div class="card card-block">
+          <h4 class="card-title">Prüfungen (CS)</h4>
+          <div class="card-text">
+            <div id="chart_div"></div>
+          </div> <a href="https://intranet.tuhh.de/stud/pruefung/index.php3" class="card-link" target="_blank">Alle Prüfungstermine</a>
+          <div class="float-xs-right text-muted">Angaben ohne Gewähr</div>
+        </div>
         <div class="card card-block">
           <h4 class="card-title">TUHH.de Suche</h4>
-            <div class="card-text">
-              <form class="form-inline" action="https://google.de/search" method="get" target="_blank">
-                <div class="form-group-lg">
-                    <input type="hidden" name="sitesearch" value="https://www.tuhh.de" />
-                    <input type="text" name="q" class="form-control" />
-                    <button type="submit" class="btn btn-primary">Suchen</button>
-                </div>
-              </form>
-            </div>
+          <div class="card-text">
+            <form class="form-inline" action="https://google.de/search" method="get" target="_blank">
+              <div class="form-group-lg">
+                <input type="hidden" name="sitesearch" value="https://www.tuhh.de" />
+                <input type="text" name="q" class="form-control" />
+                <button type="submit" class="btn btn-primary">Suchen</button>
+              </div>
+            </form>
           </div>
-
         </div>
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/locale/de.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/dashboard.js"></script>
-  </body>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/locale/de.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/dashboard.js"></script>
+</body>
+
 </html>
