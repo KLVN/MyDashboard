@@ -19,8 +19,8 @@ var DashboardData = {
     {name: "Mensa", url: "http://speiseplan.studierendenwerk-hamburg.de/de/570/" + currentYear + "/" + currentWeek + "/"},
     {name: "Mail", url: "https://webmail.tu-harburg.de/horde/imp/dynamic.php?page=mailbox#mbox:SU5CT1g"},
     {name: "SOS", url: "https://www.service.tuhh.de/sos/"},
-    {name: "Prüfungstermine", url: "https://intranet.tuhh.de/stud/pruefung/index.php3"},
-    {name: "Termine & Fristen", url: "https://www.tuhh.de/tuhh/studium/studieren/termine-fristen.html"},
+    {name: "Prüfungstermine", url: "https://intranet.tuhh.de/stud/pruefung/index.php"},
+    {name: "Termine & Fristen", url: "https://www.tuhh.de/tuhh/studium/studieren/organisatorisches-rund-ums-studium/termine-fristen.html"},
     {name: "Intranet", url: "https://intranet.tuhh.de/editor/index.php"},
     {name: "Wetter", url: "http://www.wetteronline.de/wetter/hamburg/harburg"},
     {name: "Lageplan", url: "https://www.tuhh.de/tuhh/uni/lageplan/campusplan.html"}
